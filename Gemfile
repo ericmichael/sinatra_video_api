@@ -5,14 +5,14 @@ gem 'data_mapper'
 gem 'stripe'
 gem 'jwt'
 gem 'sinatra-namespace'
-gem 'activesupport'
+gem 'activesupport' , '~> 5.0', '< 6.0'
 
 group :development do
-  gem "sqlite3-ruby"
+   gem 'sqlite3', '~> 1.3', '< 1.4'
   gem "dm-sqlite-adapter"
   gem 'rspec'
   gem 'rack-test'
-  gem 'capybara'
+  gem 'capybara', '3.0.0'
   gem 'dm-rspec'
   gem 'rack_session_access'
   gem 'poltergeist'
